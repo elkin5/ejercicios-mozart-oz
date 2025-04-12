@@ -58,6 +58,11 @@ X = H|T
 
 % Explorar y recorrer listas
 List = [1 2 3 4 5]
+% Con case se puede obtener la cabeza y la cola de una lista
+case List of H|T then
+   {Browse H} % Muestra la cabeza de la lista
+   {Browse T} % Muestra la cola de la lista
+end
 
 % Muestra el primer elemento de la lista
 {Browse {List.hd X}}
